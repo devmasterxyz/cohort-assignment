@@ -6,17 +6,9 @@
 */
 
 function findLargestElement(numbers) {
-    // if(numbers.length==0) return;
-    // let maxm = Number.MIN_SAFE_INTEGER;
-    // for(let i=0;i<numbers.length;i++) {
-    //     if(numbers[i]>maxm) {
-    //         maxm=numbers[i];
-    //     }
-    // }
-    // return maxm;
-    numbers.sort((a, b) => a - b);
-    if(numbers.length==0) return;
-    return numbers[numbers.length-1];
+  if (numbers.length == 0) return;
+  numbers.sort((a, b) => a - b);
+  return numbers[numbers.length - 1];
 }
 
 module.exports = findLargestElement;
